@@ -1,5 +1,5 @@
 <div align="center"> 
-  <img src="https://i.ibb.co/PTPfSCw/WebBadge.png" alt="WebBadge" border="0" height='90'>
+  <img src="https://github.com/Its-Nishant-01/vibing/blob/master/app/src/main/res/drawable/lomgo.png" alt="WebBadge" border="0" height='150'>
   <h1 align ="center">Vibing</h1>
  
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
