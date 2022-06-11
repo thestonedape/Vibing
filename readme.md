@@ -12,13 +12,18 @@
 ## About
 It is an Android App which is used to create ambient sound experience. 
 
-**Note:** If you can't see anything in browser after run, please disable your AdBlocker for this website.
 
-<a href="#"><img src="https://raw.githubusercontent.com/fury-gl/fury-communication-assets/main/ws_smaller.gif" alt="FURY Networks" width="400px"></a>
+<a href="#"><img src="https://github.com/Its-Nishant-01/vibing/blob/master/app/src/main/res/screens/simpsons-bart-simpson.gif" alt="vibing" width="300px" height="200"></a>
 
 
 ## Screenshots
-<img src="" alt="WebBadge" border="0" height='150'>
+<div>
+<img src="https://github.com/Its-Nishant-01/vibing/blob/master/app/src/main/res/screens/Screen%201.jpg" alt="Screen1" align="left" border="0" height='500'>
+<img src="https://github.com/Its-Nishant-01/vibing/blob/master/app/src/main/res/screens/Screen%203.jpg" alt="Screen2" align="center" border="0" height='500'>
+
+
+</div>
+
 
 ## Functionality & Concept used:
 The App has a very simple and interactive interface that helps people to experience different ambient sounds and allows them to customize as per their preferance. Following are a few android concepts used to achieve the functionalities in the app:<br>
@@ -32,4 +37,9 @@ The App has a very simple and interactive interface that helps people to experie
 
 ## Support
 ⭐ **Please Star  and share the project. Thanks!** ❤️ 
+
+
+
+
+
 
