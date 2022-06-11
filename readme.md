@@ -15,6 +15,8 @@ It is an Android App which is used to create ambient sound experience.
 **Note:** If you can't see anything in browser after run, please disable your AdBlocker for this website.
 
 <a href="#"><img src="https://raw.githubusercontent.com/fury-gl/fury-communication-assets/main/ws_smaller.gif" alt="FURY Networks" width="400px"></a>
+
+
 ## Screenshots
 
 
