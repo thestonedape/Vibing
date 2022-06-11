@@ -18,7 +18,7 @@ It is an Android App which is used to create ambient sound experience.
 
 
 ## Screenshots
-
+<img src="" alt="WebBadge" border="0" height='150'>
 
 ## Functionality & Concept used:
 The App has a very simple and interactive interface that helps people to experience different ambient sounds and allows them to customize as per their preferance. Following are a few android concepts used to achieve the functionalities in the app:<br>
