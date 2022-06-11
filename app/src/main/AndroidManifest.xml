@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.beta.vibing">
+    <!-- Permissions of internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+        tools:ignore="DataExtractionRules"
+        tools:targetApi="s">
+
+
+        <activity
+            android:name=".splash"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".main"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".PlayAudio1"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio2"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio3"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio4"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio5"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio6"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio7"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio8"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio9"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio10"
+            android:enabled="true">
+
+        </service>
+        <service
+            android:name=".PlayAudio11"
+            android:enabled="true">
+        </service>
+
+    </application>
+
+</manifest>

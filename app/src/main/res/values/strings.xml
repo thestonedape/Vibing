@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Vibing</string>
+    <string name="Camp">Camp Fire</string>
+    <string name="wind">Wind</string>
+    <string name="forest">Forest</string>
+    <string name="rain">Rain</string>
+    <string name="ocean">Ocean</string>
+    <string name="sure">Are You Sure?</string>
+    <string name="exit">Exit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="todo">TODO</string>
+    <string name="Intensity">Intensity</string>
+    <string name="lightning">Lightning</string>
+    <string name="camp_fire">Camp Fire</string>
+    <string name="water_fall">Water Fall</string>
+    <string name="chill_hops">Chill Hops</string>
+    <string name="coffee_shop">Coffee Shop</string>
+    <string name="train_station">Train Station</string>
+    <string name="bird_sanctuary">Bird Sanctuary</string>
+    <string name="waves">Waves</string>
+    <string name="piano">Piano</string>
+    <string name="guitar">Guitar</string>
+
+
+</resources>

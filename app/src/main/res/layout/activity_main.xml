@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="org.beta.vibing.main">
+
+
+    <RelativeLayout
+        android:id="@+id/rectangle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:background="@drawable/img"
+        android:scaleType="fitXY">
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="vertical"
+        android:background="#00000000"
+        android:theme="@style/scrollview"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null">
+
+
+            <FrameLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                app:srcCompat="@drawable/bird"
+                android:id="@+id/imageClass_adapter1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bird_sanctuary"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter1"
+                        android:layout_marginStart="4.5dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:theme="@style/seekbar" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout1"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout3"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/fire"
+                    android:id="@+id/imageClass_adapter2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/camp_fire"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter"
+                        android:layout_marginStart="4.5dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:theme="@style/seekbar"
+                    />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout2"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout4"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/waterfall"
+                    android:id="@+id/imageClass_adapter3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/water_fall"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter3"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/fonts"
+                        android:layout_marginStart="4.5dp"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:theme="@style/seekbar"
+                     />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout3"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout5"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/chill"
+                    android:id="@+id/imageClass_adapter4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chill_hops"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter4"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="4.5dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:theme="@style/seekbar"
+                    />
+
+            </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <FrameLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout4"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout6"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/wind"
+                    android:id="@+id/imageClass_adapter5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wind"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter5"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="4.5dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:theme="@style/seekbar"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout5"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout7"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/coffee"
+                    android:id="@+id/imageClass_adapter6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/coffee_shop"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter6"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="4.5dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:theme="@style/seekbar" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout6"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout8"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/train"
+                    android:id="@+id/imageClass_adapter7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/train_station"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter7"
+                        android:layout_marginStart="4.5dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:theme="@style/seekbar"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout7"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout9"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/piano"
+                    android:id="@+id/imageClass_adapter8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/piano"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter8"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="4.5dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch8"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:theme="@style/seekbar"
+                    />
+
+            </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <FrameLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout8"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout11"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/waves"
+                    android:id="@+id/imageClass_adapter9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_11"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waves"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter9"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="4.5dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch9"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+
+                    android:theme="@style/seekbar"
+                     />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout9"
+                app:layout_constraintBottom_toTopOf="@id/linearLayout10"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/guitar"
+                    android:id="@+id/imageClass_adapter11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guitar"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter11"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="4.5dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch11"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+
+                    android:theme="@style/seekbar"
+                    />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shape_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/rain"
+                    android:id="@+id/imageClass_adapter10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/frame_bg10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/gradient_color_12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/subjectName_adapter10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rain"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/totalStudents_adapter10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subjectName_adapter10"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="4.5dp"
+                        android:fontFamily="@font/fonts"
+                        android:text="@string/Intensity"
+                        android:textColor="@color/white" />
+
+                    <ImageButton
+                        android:id="@+id/switch10"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00000000"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play"
+                        tools:ignore="TooManyViews" />
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:theme="@style/seekbar" />
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>
