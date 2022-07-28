@@ -3,7 +3,8 @@
   <h1 align ="center">Vibing</h1>
  </div>
 <div align="center"> 
- <img src="http://ForTheBadge.com/images/badges/made-with-java.svg"> 
+ <img src="http://ForTheBadge.com/images/badges/made-with-java.svg">
+  <br>
  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white">
 </div> 
   
