@@ -41,7 +41,9 @@ The App has a very simple and interactive interface that helps people to experie
 
 
 ## Support
-⭐ **Please Star  and share the project. Thanks!** ❤️ 
+⭐ **Please Star and share the project. Thanks!** ❤️ 
+First project 👀
+
 
 
 
